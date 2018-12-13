@@ -55,7 +55,7 @@
 		11E157981BC0293900F2F99A /* DFFaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157971BC0293900F2F99A /* DFFaceManager.m */; };
 		11E157CF1BC8F6E500F2F99A /* CommentInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E157CE1BC8F6E500F2F99A /* CommentInputView.m */; };
 		11F07F9E1BCF9BBE0084DAA3 /* DFBaseTimeLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F07F9D1BCF9BBE0084DAA3 /* DFBaseTimeLineViewController.m */; };
-		40DB16E90B178BFB41AD7BFB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D78B98A426548E916FEF8BA /* libPods.a */; };
+		9FEEA0CFEAFD39B1CDA360CC /* libPods-DFTimelineView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7CA0EC01224F7FAE30C838E /* libPods-DFTimelineView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,9 +142,9 @@
 		11E157CE1BC8F6E500F2F99A /* CommentInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentInputView.m; sourceTree = "<group>"; };
 		11F07F9C1BCF9BBD0084DAA3 /* DFBaseTimeLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFBaseTimeLineViewController.h; sourceTree = "<group>"; };
 		11F07F9D1BCF9BBE0084DAA3 /* DFBaseTimeLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFBaseTimeLineViewController.m; sourceTree = "<group>"; };
-		4D78B98A426548E916FEF8BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F49AA15AE3FE5215CAC7F60 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		B4A7DD4710BBDDD344A4E1FE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		25AEC6C6A1E282958F6C9027 /* Pods-DFTimelineView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFTimelineView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DFTimelineView/Pods-DFTimelineView.debug.xcconfig"; sourceTree = "<group>"; };
+		EAFC886EDE2581800C8BFF2B /* Pods-DFTimelineView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DFTimelineView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DFTimelineView/Pods-DFTimelineView.release.xcconfig"; sourceTree = "<group>"; };
+		F7CA0EC01224F7FAE30C838E /* libPods-DFTimelineView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DFTimelineView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40DB16E90B178BFB41AD7BFB /* libPods.a in Frameworks */,
+				9FEEA0CFEAFD39B1CDA360CC /* libPods-DFTimelineView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +218,8 @@
 			children = (
 				11D758221BB7D43B00F554D7 /* DFTimelineView */,
 				11D758211BB7D43B00F554D7 /* Products */,
-				782F5666067D60162A8625C3 /* Pods */,
-				60FE8DAF80C297CC9F9C0A95 /* Frameworks */,
+				91B3AB72441FA0FF97802E53 /* Pods */,
+				F37A8EB3B80659B3D2F978FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -410,21 +410,21 @@
 			path = CommentInputView;
 			sourceTree = "<group>";
 		};
-		60FE8DAF80C297CC9F9C0A95 /* Frameworks */ = {
+		91B3AB72441FA0FF97802E53 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4D78B98A426548E916FEF8BA /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		782F5666067D60162A8625C3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B4A7DD4710BBDDD344A4E1FE /* Pods.debug.xcconfig */,
-				8F49AA15AE3FE5215CAC7F60 /* Pods.release.xcconfig */,
+				25AEC6C6A1E282958F6C9027 /* Pods-DFTimelineView.debug.xcconfig */,
+				EAFC886EDE2581800C8BFF2B /* Pods-DFTimelineView.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F37A8EB3B80659B3D2F978FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7CA0EC01224F7FAE30C838E /* libPods-DFTimelineView.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,12 +434,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11D758431BB7D43B00F554D7 /* Build configuration list for PBXNativeTarget "DFTimelineView" */;
 			buildPhases = (
-				6A0D0494ADE755FDAC522AC4 /* Check Pods Manifest.lock */,
+				982C2D830CA76016477B64F5 /* [CP] Check Pods Manifest.lock */,
 				11D7581C1BB7D43B00F554D7 /* Sources */,
 				11D7581D1BB7D43B00F554D7 /* Frameworks */,
 				11D7581E1BB7D43B00F554D7 /* Resources */,
-				C3C3737A2EE445D26492149E /* Embed Pods Frameworks */,
-				44A84F7F3B903730D79A636E /* Copy Pods Resources */,
+				1971CECEA85FC119EB37943F /* [CP] Embed Pods Frameworks */,
+				DEA5E0CF5922C1038A758430 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -512,49 +512,89 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		44A84F7F3B903730D79A636E /* Copy Pods Resources */ = {
+		1971CECEA85FC119EB37943F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFTimelineView/Pods-DFTimelineView-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6A0D0494ADE755FDAC522AC4 /* Check Pods Manifest.lock */ = {
+		982C2D830CA76016477B64F5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DFTimelineView-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C3C3737A2EE445D26492149E /* Embed Pods Frameworks */ = {
+		DEA5E0CF5922C1038A758430 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DFTimelineView/Pods-DFTimelineView-resources.sh",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/back-arrow@2x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/back-arrow@3x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/check_success@2x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/check_success@3x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/Expression.plist",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/fail@2x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/fail@3x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/press_btn_green@2x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/press_btn_green@3x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/refresh@2x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/refresh@3x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/success@2x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/success@3x.png",
+				"${PODS_ROOT}/DFCommon/DFCommon/DFCommon/Resource/ClippedExpression.bundle",
+				"${PODS_ROOT}/MJPhotoBrowser/MJPhotoBrowser/MJPhotoBrowser/MJPhotoBrowser.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back-arrow@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/back-arrow@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/check_success@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/check_success@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Expression.plist",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fail@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fail@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/press_btn_green@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/press_btn_green@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/refresh@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/refresh@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/success@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/success@3x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ClippedExpression.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJPhotoBrowser.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DFTimelineView/Pods-DFTimelineView-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -683,7 +723,7 @@
 		};
 		11D758441BB7D43B00F554D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4A7DD4710BBDDD344A4E1FE /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 25AEC6C6A1E282958F6C9027 /* Pods-DFTimelineView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
@@ -699,7 +739,7 @@
 		};
 		11D758451BB7D43B00F554D7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F49AA15AE3FE5215CAC7F60 /* Pods.release.xcconfig */;
+			baseConfigurationReference = EAFC886EDE2581800C8BFF2B /* Pods-DFTimelineView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
